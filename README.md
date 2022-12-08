@@ -2,6 +2,16 @@
 simple python Token Grabber that work with the new token system !
  
  ---------------------------------------------------------
+ 🦠🦠🦠
+ 
+ Antivirus detection :
+ 
+ ![image](https://user-images.githubusercontent.com/120118548/206500632-ae466101-054c-4afc-ac5a-099433c20599.png)
+
+ 🦠🦠🦠
+ ---------------------------------------------------------
+ 
+ 
  
 Features :
 
