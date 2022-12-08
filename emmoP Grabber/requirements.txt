@@ -1,0 +1,15 @@
+requests
+Crypto.Cipher
+pycryptodome
+psutil
+requests
+tinyaes
+wheel   
+pyinstaller
+InquirerPy
+wmi
+pycryptodome
+discord
+discord.py
+pillow
+pypiwin32
