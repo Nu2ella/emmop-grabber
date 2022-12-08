@@ -22,9 +22,13 @@ Features :
  HOW TO USE IT ??
  
 1 - Open "install_python.bat" ( only if you dont have Python installed on your Computer )
+
 2 - Open "build.bat"
+
 3 - Choose the name of the output
+
 4 - Send the .exe to the victim :demon:
+
 
 The built file will be in the "dist" folder !
 
