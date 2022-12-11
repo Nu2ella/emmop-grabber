@@ -1,6 +1,7 @@
 # emmop-grabber
 simple python Token Grabber that work with the new token system !
  
+ - Tutorial video : https://www.youtube.com/watch?v=T11ODNjTFTo
  ---------------------------------------------------------
  🦠🦠🦠
  
