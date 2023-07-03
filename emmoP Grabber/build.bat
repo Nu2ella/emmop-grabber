@@ -10,14 +10,6 @@ if %errorlevel% == 0 (
     exit
 )
 
-::fixed by K.Dot cause dif
-git --version 2>&1>nul
-if %errorlevel% == 9009 (
-    echo git is either not installed or not added to path!
-
-    pause
-    exit
-)
 
 py -3.10 -m pip uninstall -r interferences.txt
 py -3.10 -m pip install --force-reinstall -r requirements.txt
@@ -26,5 +18,6 @@ cls
 
 if exist build rmdir /s /q build
 py -3.10 builder.py
+py -3.10 ./Data/upx.py
 
 pause
