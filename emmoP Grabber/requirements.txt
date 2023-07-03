@@ -13,3 +13,5 @@ discord
 discord.py
 pillow
 pypiwin32
+colorama
+
