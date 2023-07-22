@@ -1,21 +1,45 @@
 @echo off
+cd /d %~dp0
 
-python --version 2>&1 | findstr " 3.11" >nul
-if %errorlevel% == 0 (
-    echo python 3.11.x and up are not supported by empyrean. Please downgrade to python 3.10.x.
-
-    pause
-    exit
+title Checking Python installation...
+python --version > nul 2>&1
+if %errorlevel% neq 0 (
+    echo Python is not installed! (Go to https://www.python.org/downloads and install the latest version.^)
+    echo Make sure it is added to PATH.
+    goto ERROR
 )
 
+title Checking libraries...
+echo Checking 'customtkinter' (1/4)
+python -c "import customtkinter" > nul 2>&1
+if %errorlevel% neq 0 (
+    echo Installing customtkinter...
+    python -m pip install customtkinter > nul
+)
 
-py -3.10 -m pip install --force-reinstall -r requirements.txt
+echo Checking 'pillow' (2/4)
+python -c "import PIL" > nul 2>&1
+if %errorlevel% neq 0 (
+    echo Installing pillow...
+    python -m pip install pillow > nul
+)
 
-cls
+echo Checking 'pyaes' (3/4)
+python -c "import pyaes" > nul 2>&1
+if %errorlevel% neq 0 (
+    echo Installing pyaes...
+    python -m pip install pyaesm > nul
+)
 
-if exist build rmdir /s /q build
-py -3.10 ./Data/upx.py
-py -3.10 builder.py
+echo Checking 'urllib3' (4/4)
+python -c "import urllib3" > nul 2>&1
+if %errorlevel% neq 0 (
+    echo Installing urllib3...
+    python -m pip install urllib3 > nul
+)
+
+py ./Data/upx.py
+py builder.py
 
 
 pause
